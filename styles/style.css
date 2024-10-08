@@ -1,0 +1,44 @@
+
+.animation-section {
+    min-height: 100vh;
+    background-color: var(--text-color);
+    margin-top: 50px;
+}
+
+.animation-section .box {
+    width: 100px;
+    height: 100px;            
+    background-color: #ff6a3e;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes example {
+    0% {
+        background-color: #ff6a3e;
+        transform: scale(1);
+    }
+
+    50% {
+        background-color: green;
+        transform: scale(2);
+    }
+    100% {
+        background-color: var(--services-bg-color);
+        transform: scale(1);
+    }
+}
+
+@keyframes backgroundColorChange {
+    from {
+        background-color: #ff6a3e;
+    }
+
+    to {
+        background-color: var(--services-bg-color);
+    }
+}
